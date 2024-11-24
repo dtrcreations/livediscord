@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #36393f;
+    color: #dcddde;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #2f3136;
+    padding: 20px;
+    border-right: 1px solid #202225;
+}
+
+.server-list {
+    list-style: none;
+}
+
+.server-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #40444b;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stream-container {
+    background-color: #18191c;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.stream-options {
+    padding: 10px;
+    background-color: #40444b;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.stream-button {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Chat Styles */
+.chat-container {
+    background-color: #2f3136;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #40444b;
+    border-radius: 4px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.message-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #40444b;
+    color: white;
+}
+
+/* Poll Styles */
+.poll-container {
+    background-color: #40444b;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.poll-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.poll-bar {
+    height: 20px;
+    background-color: #7289da;
+    border-radius: 10px;
+}
+
+/* Emoji Picker */
+.emoji-picker {
+    position: relative;
+}
+
+.emoji-button {
+    background: none;
+    border: none;
+    color: #dcddde;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.emoji-panel {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background-color: #2f3136;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.emoji {
+    padding: 5px;
+    cursor: pointer;
+}
